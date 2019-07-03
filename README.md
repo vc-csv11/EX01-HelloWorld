@@ -2,7 +2,7 @@
 
 ### Overview
 
-The goal of this project is to familarize your self with the programming assignment work flow. 
+The goal of this project is to familiarize your self with the programming assignment work flow. 
 That is, the individual steps taken to start, complete and turn in for a grade a programming 
 assignment for this class. All subsequent programming assignments will follow the same exact 
 works flow. 
@@ -11,7 +11,25 @@ In addition, the secondary goal of this project is to write your first Python pr
 been a tradition for decades, the first program you write in most new languages is called Hello
 World, which challenges the programmer to print those simple words to the display.
 
+### Starting the project
+
+Go to the LazyGrader website and login. On your home screen you should see all the assignments
+for this class, and any other of my classes your are enrolled in. Next to the assignment called
+**EX01-HelloWorld**, you should see a _Start_ button. Click that button to start the assignment.
+This action will create the build on Jenkins and in GitHub. Once it's done you should see a 
+_Build_ and _Grade_ button. Now you can clone the project locally in PyCharm. 
+
+Click the link to your project in GitHub and press the _Clone_ button. Then click the clipboard
+icon next to your repository URL, or select the URL and copy it to the clipboard. Once you've 
+copied it, go to PyCharm and select **VCS -> Checkout from Version Control -> Git**. Paste the
+URL into the URL field of the dialog box that appears. Next, click the _Clone_ button. After
+PyCharm downloads your code, you are reading to start writing code.
+
 ### Creating `hello_world.py`
+
+In PyCharm, right click on **EX01-HelloWorld** and then select **New -> Python File**. In the 
+dialog that open, type the file name `hello_world`. PyCharm will add the .py extension, which
+will be the extension for every program in this course.
 
 ### Writing the code
 
@@ -88,3 +106,19 @@ and that should be it. You should see a message that says the push was successfu
 step you'll confirm that your code is working and then submit it for a grade.
 
 ### Turning in and Grading your code
+
+Go back to LazyGrader and login again, if needed. Press the _Build_ button next to 
+**EX01-HelloWorld** for this course. This will send a command to Jenkins to download your code
+from GitHub and test it. If all goes well and all the tests pass, the ball next to the _Build_
+will turn blue. If some of the tests don't pass the ball will be yellow. If the ball is grey,
+that means you have not run the tests before and your project is not ready for grading.
+
+Once the Jenkins status is blue or yellow, press the _Grade_ button for **EX01-HelloWorld**.
+This will read the results from Jenkins and send your grade to Canvas. Once the notification in 
+LazyGrader says the grade has been posted, you should see your grade on Canvas.
+
+That's it, once you've submitted your grade, you are done. I will add points later, after I
+inspect your code. For example, most projects will be out of a total of 25 points, but after 
+pressing the _Grade_ button, Canvas will show 20 points. I will add up to 5 points after I have
+looked at your code and am conviced it is original (Not so much for this assignment. There's
+no such thing as a plagiarized Hello World program).
